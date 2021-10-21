@@ -1,0 +1,55 @@
+.header{
+    font-size: 9px;  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .header div{
+    display: flex;
+    align-items: center;
+  }
+  
+  .header img{
+    height: 20px;
+    width: 60px;
+  }
+  
+  .header span{
+    font-size: 11px;
+    font-weight: bold;
+  }
+  
+  .header input {
+    font-size: 9px; 
+    color:white;
+    padding: 5px 5px;
+    border: solid 1px white;
+    width: 300px;
+  }
+  
+  .header .header-left {
+    flex: .3;
+  }
+  
+  .header .header-center{
+    flex: .5;
+  }
+  
+  .header .header-left span{
+    padding-right: 10px;
+  }
+    
+  .header .header-center .mike-icon{
+    margin-left: 5px;
+  }
+  .header .header-center .search-icon{
+    padding: 4px;
+    border: solid 1px white
+  }
+  
+  .header .header-right {
+    flex: .1;
+    justify-content: space-around;
+  }
