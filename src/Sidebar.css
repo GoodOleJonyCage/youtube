@@ -1,0 +1,80 @@
+.body{
+    display: flex;
+    align-items :flex-start;
+    justify-content: space-between;
+    font-family: 'Roboto';font-weight:400;
+    height: calc(94vh);
+    overflow: hidden;
+}
+
+.body .sidebar {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: rgb(232, 230, 227);
+    width: 400px;
+    font-size: 11px;
+    padding: 10px 15px;
+    font-weight: bold;
+    overflow: auto;
+    height: 100%;
+}
+
+.body .sidebar div{
+    padding: 9px 0px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.body .sidebar div:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+
+.body .sidebar div span{
+    
+    color:rgb(232, 230, 227);
+    font-size: 16px;
+}
+.body .sidebar div label{
+    margin-left: 10px;
+    letter-spacing: .2px;
+    color:rgb(232, 230, 227);
+}
+
+@media (max-width: 650px) {
+    .body .sidebar div label{
+        display: none;
+    }
+    .body .sidebar .heading  {
+        display: none !important;
+    }
+  }
+
+.body .sidebar .separator{
+    border-top: solid 1px white;
+    width: 100%;
+    height: 1px;
+    padding: 0px !important;
+    margin:  0px 0px;
+}
+
+.body .sidebar .heading{
+    color :rgb(245, 245, 245);
+    cursor :pointer;
+    display: inline-block;
+    font-weight:bold; 
+    height :17px;
+    letter-spacing: -0.5px;
+    overflow-wrap :normal;
+    text-decoration-color :rgb(245, 245, 245);
+    text-decoration-line :nonev;
+    text-decoration-style :solid;
+    text-size-adjust :100%;
+    text-transform :uppercase;
+    unicode-bidi :isolate;
+    visibility :visible;
+    word-break :normal;
+    margin-left: 10px;
+}
