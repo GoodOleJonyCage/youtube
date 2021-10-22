@@ -1,0 +1,120 @@
+.content {
+    width: 100%;
+}
+.detail{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    /* overflow: auto;
+    height: calc(90vh); */
+}
+
+.detail .detail-left{
+    
+}
+
+.detail .detail-right{
+    margin-left: 10px;
+}
+
+.detail .detail-left img{
+    height: 400px;
+    width: calc(50vw);
+}
+
+.detail .detail-left .bottom-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color:lightgray;
+    margin-top: 15px;
+}
+
+.detail .detail-left .bottom-info .bottom-info-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.detail .detail-left .bottom-info .bottom-info-left .heading{
+    font-size: .9em;
+    margin-bottom: 5px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+.detail .detail-left .bottom-info .bottom-info-left .info{
+    font-size: .7em;
+    color: lightgray;
+}
+
+.detail .detail-left .bottom-info-right{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.detail .detail-left .bottom-info-right div {
+    display: flex;
+    align-items: center;
+}
+
+.detail .detail-left .bottom-info-right  .material-icons-outlined{
+    margin-left: 15px;
+    margin-right: 4px;
+}
+
+.detail .detail-left .bottom-info-right div span{
+    font-size: .9em;
+}
+
+.detail .detail-right div img{
+    height: 100px;
+    width: 180px;
+}
+
+.detail .detail-right div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.detail .detail-right .detail-info .heading{
+    font-size: .8em;
+    font-weight: bold;
+    color:lightgray;
+    margin-bottom: 5px;
+    max-width: 200px;
+    text-align: left;
+}
+
+.detail .detail-right .detail-info  .small-heading{
+    font-size: .7em;
+    color:lightgray
+}
+.detail .detail-right .detail-info div{
+    
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.detail .detail-right .material-icons-outlined{
+    font-size: .9em;
+    margin-top: 2px;
+}
+
+.detail .detail-right div div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+
+.detail .detail-left .comments{
+    margin-top: 20px;
+    background-color: red;
+}

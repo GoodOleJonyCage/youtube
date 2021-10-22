@@ -3,8 +3,8 @@
     align-items :flex-start;
     justify-content: space-between;
     font-family: 'Roboto';font-weight:400;
-    height: calc(94vh);
-    overflow: hidden;
+    /* height: calc(94vh);
+    overflow: auto; */
 }
 
 .body .sidebar {
@@ -12,7 +12,7 @@
     align-items: flex-start;
     flex-direction: column;
     background-color: rgb(232, 230, 227);
-    width: 400px;
+    width: 200px;
     font-size: 11px;
     padding: 10px 15px;
     font-weight: bold;

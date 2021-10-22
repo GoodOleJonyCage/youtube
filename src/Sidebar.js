@@ -5,7 +5,7 @@ export const Sidebar = () => {
     return <div className="sidebar">
         <div>
             <span class="material-icons-outlined">home</span>
-            <label>Home</label>
+            <label><a href="/">Home</a></label>
         </div>
         <div>
             <span class="material-icons-outlined">explore</span>

@@ -42,6 +42,7 @@
   justify-content: space-around;
   align-items: center;
   width: 100%;
+  padding: 10px 0px;
 }
 
 .header div{
@@ -90,4 +91,9 @@
 .header .header-right {
   flex: .1;
   justify-content: space-around;
+}
+
+
+.sidebar a:visited{
+    color:unset;
 }

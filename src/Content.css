@@ -3,6 +3,7 @@
     /* justify-content: flex-start; */
     display: flex;
     flex-wrap: wrap;
+    margin: 0px auto;
 }
 
 .content .content-item{
@@ -10,7 +11,7 @@
     align-items: flex-start;
     flex-direction: column;
     justify-content:flex-start ; */
-    margin: 20px 15px;
+    margin: 20px auto;
 }
 .content .content-item .item-footer{
     display: flex;
