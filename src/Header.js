@@ -1,11 +1,14 @@
+import { Signedin } from './SignedIn';
 import './Header.css'
 
-export const Header = () => {
+export const Header = (props) => {
 
     return <div className="header">
         <div className="header-left">
             <span class="material-icons-outlined">menu</span>
-            <img src="https://logosmarcas.net/wp-content/uploads/2020/04/YouTube-Logo.png"></img>
+            <a href="/">
+                <img src="https://venturebeat.com/wp-content/uploads/2017/08/youtube_logo_old_new1.gif?fit=400%2C200&strip=all"></img>
+            </a>
         </div>
         <div className="header-center">
             <input placeholder="Search" type="text"></input>
@@ -16,7 +19,7 @@ export const Header = () => {
             <span class="material-icons-outlined">videocam</span>
             <span class="material-icons-outlined">apps</span>
             <span class="material-icons-outlined">notifications</span>
-            <span class="material-icons-outlined">logo_dev</span>
+            <Signedin {...props}/>
         </div>
     </div>;
 }

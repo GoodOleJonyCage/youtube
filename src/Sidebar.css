@@ -11,7 +11,7 @@
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    background-color: rgb(232, 230, 227);
+    /* background-color: rgb(232, 230, 227); */
     width: 200px;
     font-size: 11px;
     padding: 10px 15px;
@@ -77,4 +77,8 @@
     visibility :visible;
     word-break :normal;
     margin-left: 10px;
+}
+
+.header .header-right #user-account-tip{
+    font-size: .7em;
 }

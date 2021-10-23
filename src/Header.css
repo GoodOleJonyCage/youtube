@@ -20,19 +20,40 @@
   }
   
   .header input {
-    color:white;
+    color:black;
     padding: 5px 5px;
     border: solid 1px white;
-    width: 300px;
+    width: 100%;
+  }
+   
+  .header .header-left span{
+    padding-right: 10px;
+  }
+    
+  .header .header-center .mike-icon{
+    margin-left: 5px;
+  }
+  .header .header-center .search-icon{
+    padding: 0px 4px;
+    border: solid 1px white
   }
   
   .header .header-left {
     flex: .3;
+    cursor: pointer;
   }
   
-  .header .header-center{
-    flex: .5;
-  }
+ 
+.header .header-left {
+  flex: .3;
+}
+.header .header-center{
+  flex: .4;
+}
+.header .header-right {
+  flex: .3;
+  justify-content: flex-end;
+}
   
   .header .header-left span{
     padding-right: 10px;
@@ -45,8 +66,10 @@
     padding: 4px;
     border: solid 1px white
   }
-  
   .header .header-right {
-    flex: .1;
-    justify-content: space-around;
+    margin-right: 15px;
+  }
+  .header .header-right .material-icons-outlined{
+    cursor: pointer;
+    padding-left: 15px;
   }

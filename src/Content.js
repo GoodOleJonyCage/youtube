@@ -1,17 +1,19 @@
-import react from 'react'
-import { BrowserRouter, Route, Switch,NavLink } from 'react-router-dom';
+import { useState, useEffect } from 'react'
+import { BrowserRouter, Route, Switch, NavLink } from 'react-router-dom';
+import { SignedInUser, IsSignedIn } from './FirebaseService'
+import firebase from "firebase/app";
 import { ItemList } from './ItemList';
 import { Detail } from './Detail';
 import './Content.css'
 
-export const Content = () => {
+export const Content = (props) => {
 
     return <div className="content">
-            <BrowserRouter>
-                <Switch>
-                    <Route path="/" exact component={ItemList}></Route>
-                    <Route path="/detail" component={Detail}></Route>
-                </Switch>
-            </BrowserRouter>
-        </div>;
+        <BrowserRouter>
+            <Switch>
+                <Route path="/" exact render={(p) => <ItemList {...props} />} ></Route>
+                <Route path="/detail" render={(p) => <Detail   {...props} />}></Route>
+            </Switch>
+        </BrowserRouter>
+    </div>;
 }
