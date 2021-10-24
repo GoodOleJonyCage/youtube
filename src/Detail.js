@@ -10,7 +10,7 @@ export const Detail = (props) => {
                     <div className="bottom-info">
                         <div className="bottom-info-left">
                             <div className="heading">2021 Honda CB650R | First Ride Review</div>
-                            <div className="info">245,003 viewsApr 30, 2021</div>
+                            <div className="info">245,003 views Apr 30, 2021</div>
                         </div>    
                         <div className="bottom-info-right">
                             <div>
