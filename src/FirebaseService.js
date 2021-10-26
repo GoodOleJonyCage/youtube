@@ -50,13 +50,32 @@ export const getComments = (setcomments) => {
 }
 
 export const addComment = (text ) => {
-    console.log(text);
+    
+    if (text.length == 0) {
+        return;
+    }
     const db = firebase.firestore();
     db.collection("comments").add({
         // : "/collection/document001"
         //parentid: db.doc('comments/documentG98aGlqhgSsKf1VEFYGV'),
         //postid:1,
         parentid: '',
+        text:text,
+        //user: "rats@yahoo.com"
+    });
+}
+
+export const addReplyComment = (docid, text ) => {
+    
+    if (text.length == 0) {
+        return;
+    }
+    const db = firebase.firestore();
+    db.collection("comments").add({
+        // : "/collection/document001"
+        //parentid: db.doc('comments/documentG98aGlqhgSsKf1VEFYGV'),
+        //postid:1,
+        parentid: docid,
         text:text,
         //user: "rats@yahoo.com"
     });

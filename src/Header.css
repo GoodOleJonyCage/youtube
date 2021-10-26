@@ -21,11 +21,16 @@
   
   .header input {
     color:black;
-    padding: 5px 5px;
+    padding: 10px 10px;
     border: solid 1px white;
     width: 100%;
   }
    
+  .header .material-icons-outlined .search-icon{
+    padding:10px 6px;
+    border: solid 1px white;
+  }
+
   .header .header-left span{
     padding-right: 10px;
   }
@@ -33,10 +38,7 @@
   .header .header-center .mike-icon{
     margin-left: 5px;
   }
-  .header .header-center .search-icon{
-    padding: 0px 4px;
-    border: solid 1px white
-  }
+ 
   
   .header .header-left {
     flex: .3;
@@ -63,7 +65,7 @@
     margin-left: 5px;
   }
   .header .header-center .search-icon{
-    padding: 4px;
+    padding: 6px 5px;
     border: solid 1px white
   }
   .header .header-right {

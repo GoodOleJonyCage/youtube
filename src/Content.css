@@ -6,6 +6,11 @@
     margin: 0px auto;
 }
 
+.content .comments-top-section  button{
+    align-self: flex-end;
+    margin-bottom: 30px;
+}
+ 
 .content .content-item{
     /* display: flex;    
     align-items: flex-start;
