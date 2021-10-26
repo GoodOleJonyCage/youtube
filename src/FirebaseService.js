@@ -31,3 +31,33 @@ export const IsSignedIn = () => {
 export const SignOut = () => {
     return auth.signOut();
 }
+
+
+export const getComments = (setcomments) => {
+    
+    let comments = [];
+    const db = firebase.firestore();
+    db.collection("comments").get().then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+            comments.push({
+                docid: doc.id,
+                text: doc.data().text
+            });
+        });
+        setcomments(comments);
+    });
+    
+}
+
+export const addComment = (text ) => {
+    console.log(text);
+    const db = firebase.firestore();
+    db.collection("comments").add({
+        // : "/collection/document001"
+        //parentid: db.doc('comments/documentG98aGlqhgSsKf1VEFYGV'),
+        //postid:1,
+        parentid: '',
+        text:text,
+        //user: "rats@yahoo.com"
+    });
+}

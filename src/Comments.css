@@ -1,0 +1,83 @@
+.comments{
+    display: flex;
+    flex-direction: column;
+    align-items:  flex-start;
+    margin-top: 10px;
+    background-color: lightgray;
+    color:lightgray;
+    padding: 5px 10px;
+    width: calc(50vw);
+    margin:  0 auto;
+}
+
+.comments .comments-top-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.comments .comments-top-section textarea{
+    width: 100%;
+    height: 80px;
+    padding: 10px 10px;
+}
+
+.comments .comments-top-section button{
+   
+    margin-top: 5px;
+    text-align: right;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+.comments .comment-item{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+    width: 100%;
+}
+
+.comment-item-left{
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-start;
+}
+.comments .comment-item img{
+    height: 60px !important;
+    width: 60px !important;
+    border-radius: 80px;
+    display: inline-flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.comments .comment-item .comment-item-left-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+.comments .comment-item .comment-item-left-right .comment-item-left-right-username{
+    font-weight: bold;
+    font-size: .9em;
+    text-align: left;
+    margin: 15px 0px;
+    margin-top: 0px;
+    max-width: 600px;
+}
+
+.comments .comment-item .comment-item-left-right .comment-item-left-right-comment{
+    font-weight: bold;
+    font-size: .8em;
+}
+
+.comments .comment-item .comment-item-right .material-icons-outlined{
+    
+}
+
+.comments .comment-item .comment-item-left-right button{
+  border: solid 0px red;
+  margin :10px 0px;
+}
