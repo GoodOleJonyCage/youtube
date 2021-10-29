@@ -16,11 +16,11 @@
     align-items: flex-start;
     flex-direction: column;
     justify-content:flex-start ; */
-    margin: 20px auto;
+    margin:  10px 10px;
 }
 .content .content-item .item-footer{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
@@ -53,14 +53,17 @@
 }
 
 .content .content-item img{
-    height: 150px;
-    width: 200px;
+    height: 60%;
+    width: 240px;
 }
-.content .content-item h4{
-    font-size: 1.8em;
+.content .content-item p{
+    font-size: 1.5em;
     letter-spacing: .8px;
     margin: 5px 0px;
     padding: 0px;
+    max-width: 150px;
+    text-align: left;
+   
 }
 .content .content-item div{
     color:lightgray;

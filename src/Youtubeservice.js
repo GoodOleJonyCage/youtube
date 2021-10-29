@@ -1,7 +1,7 @@
 
 
-export const GetSearchResults = async () => {
-    const url = 'https://content-youtube.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyBbuVNoi1SUVPlIQLNo8omQxRHDyeWGmqE&q=jim';
+export const GetSearchResults = async (searchTerm, setlist) => {
+    const url = 'https://content-youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=50&key=AIzaSyBbuVNoi1SUVPlIQLNo8omQxRHDyeWGmqE&q=' +  searchTerm;
     //const url = 'https://googleapis.com/youtube/v3/';
     return await fetch(url, {
         //method: 'POST',
@@ -21,7 +21,7 @@ export const GetSearchResults = async () => {
         // )
     })
     .then(res => res.json())
-    .then(res =>  {return res} );
+    .then(res => setlist(res.items) )
   }
 
  

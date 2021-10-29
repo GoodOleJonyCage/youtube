@@ -1,29 +1,36 @@
-import {useState,useEffect} from 'react'
+import { useState, useEffect } from 'react'
+import { GetSearchResults } from './Youtubeservice'
 import './ItemList.css'
 
 import { NavLink } from 'react-router-dom';
 
-export const ItemList = () => {
+export const ItemList = (props) => {
 
-  
-    var lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,21,22,23,24,25,26,27,28,29,30,31,32,33];
-    return  lst.map(i => {
+
+    const [list, setlist] = useState([]);
+
+    useEffect(() => {
+        GetSearchResults(props.searchterm, setlist);
+        console.log(props.searchterm);
+    }, []);
+
+    return list == null ? <div className="no-data">NO DATA</div> : list.map(i => {
         return <div className="content-item">
             <NavLink to="/detail"  >
-                <img src={"https://picsum.photos/200/300?random=" + i}></img>
+                <img src={i.snippet.thumbnails.medium.url}></img>
             </NavLink>
             <div className="item-footer">
                 <div className="item-footer-img">
-                    <img src={"https://picsum.photos/200/300?random=" + i}></img>
+                    <img src={i.snippet.thumbnails.default.url}></img>
                 </div>
                 <div className="item-footer-right">
-                    <h4>Sample</h4>
+                    <p>{i.snippet.title}</p>
                     <div className="item-footer-info">
                         <div>
-                            Mantra Music Spirit
+                            {i.snippet.channelTitle}
                         </div>
-                        <div>
-                            430K views . 1 year ago
+                        <div className="item-footer-info-desc">
+                            {i.snippet.publishedAt}
                         </div>
                     </div>
                 </div>

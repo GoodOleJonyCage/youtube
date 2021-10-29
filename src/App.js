@@ -8,15 +8,17 @@ import './App.css';
 
 function App() {
 
+  const [searchterm, setsearchterm] = useState('');
   const [loggedin, setloggedin] = useState(false);
+  
   firebase.auth().onAuthStateChanged((user, context) => {
     setloggedin(IsSignedIn());
   });
 
   return (
     <div className="App">
-      <Header SignedInUser={SignedInUser} SignOut={SignOut} SignInGoogle={SignInGoogle} loggedin={loggedin} />
-      <Body   SignedInUser={SignedInUser} SignOut={SignOut} SignInGoogle={SignInGoogle} loggedin={loggedin} />
+      <Header setsearchterm={setsearchterm} SignedInUser={SignedInUser} SignOut={SignOut} SignInGoogle={SignInGoogle} loggedin={loggedin} />
+      <Body searchterm={searchterm}  SignedInUser={SignedInUser} SignOut={SignOut} SignInGoogle={SignInGoogle} loggedin={loggedin} />
     </div>
   );
 }

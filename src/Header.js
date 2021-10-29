@@ -1,7 +1,10 @@
+import {useRef} from 'react';
 import { Signedin } from './SignedIn';
 import './Header.css'
 
 export const Header = (props) => {
+    
+    const refSearchBox = useRef('');
 
     return <div className="header">
         <div className="header-left">
@@ -11,8 +14,12 @@ export const Header = (props) => {
             </a>
         </div>
         <div className="header-center">
-            <input placeholder="Search" type="text"></input>
-            <span class="material-icons-outlined search-icon">search</span>
+            <input 
+                ref={refSearchBox}
+                placeholder="Search" type="text"></input>
+            <span 
+                onClick={()=>{props.setsearchterm(refSearchBox.current.value);refSearchBox.current.value="";}}
+                class="material-icons-outlined search-icon">search</span>
             <span class="material-icons-outlined mike-icon">mic</span>
         </div>
         <div className="header-right">

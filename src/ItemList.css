@@ -1,0 +1,18 @@
+.item-footer .item-footer-right h4{
+    max-width: 100px;
+    text-align: left;
+}
+
+.item-footer .item-footer-info div{
+    max-width: 100px;
+    text-align: left;
+    color: lightgray !important;
+    font-size: 2.5em !important;
+    margin: 2px 0px;
+}
+
+.no-data{
+    display: flex;
+    height: calc(100vh) ;
+    align-items: center;
+}
