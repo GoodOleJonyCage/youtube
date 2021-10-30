@@ -2,7 +2,8 @@ import { Comments } from './Comments'
 import './Detail.css'
 
 export const Detail = (props) => {
-    
+  //  console.log(props.location.state);
+    console.log(props);
     const list = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25];
     return <div className="detail">
                <div className="detail-left">
@@ -14,19 +15,19 @@ export const Detail = (props) => {
                         </div>    
                         <div className="bottom-info-right">
                             <div>
-                                <span class="material-icons-outlined">recommend</span>
+                                <span className="material-icons-outlined">recommend</span>
                                 <span>3k</span>
                             </div>
-                             <div>
-                                <span class="material-icons-outlined">thumbs_up_down</span>
+                             <div >
+                                <span className="material-icons-outlined">thumbs_up_down</span>
                                 <span>71</span>
                              </div>
                              <div>
-                                <span class="material-icons-outlined">mobile_screen_share</span>
+                                <span className="material-icons-outlined">mobile_screen_share</span>
                                 <span>Share</span>
                              </div>
                              <div>
-                                <span class="material-icons-outlined">save_alt</span>
+                                <span className="material-icons-outlined">save_alt</span>
                                 <span>Save</span>
                              </div>
                         </div>    
@@ -37,7 +38,7 @@ export const Detail = (props) => {
                 {
                     list.map((i,index) => {
 
-                        return <div>
+                        return <div key={index}>
                             <img src={"https://picsum.photos/200/300?random="+ index}></img>
                             <div className="detail-info">
                                 <div>
@@ -47,7 +48,7 @@ export const Detail = (props) => {
                                     <span className="small-heading">hi 2</span>
                                 </div>
                                 <div>
-                                    <span class="material-icons-outlined">more_vert</span>
+                                    <span className="material-icons-outlined">more_vert</span>
                                 </div>
                             </div>
                         </div>

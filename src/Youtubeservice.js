@@ -1,6 +1,9 @@
 
 
 export const GetSearchResults = async (searchTerm, setlist) => {
+    
+    console.log(searchTerm);
+    
     const url = 'https://content-youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=50&key=AIzaSyBbuVNoi1SUVPlIQLNo8omQxRHDyeWGmqE&q=' +  searchTerm;
     //const url = 'https://googleapis.com/youtube/v3/';
     return await fetch(url, {

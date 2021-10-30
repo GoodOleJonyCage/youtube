@@ -12,7 +12,10 @@ export const Content = (props) => {
         <BrowserRouter>
             <Switch>
                 <Route path="/" exact render={(p) => <ItemList {...props} />} ></Route>
-                <Route path="/detail" render={(p) => <Detail   {...props} />}></Route>
+                <Route path="/detail"
+                    // render={(p) => <Detail   {...props} />}
+                    render={({ location }) => <Detail to={{ pathname: "detail", state: location.state }} />}
+                ></Route>
             </Switch>
         </BrowserRouter>
     </div>;

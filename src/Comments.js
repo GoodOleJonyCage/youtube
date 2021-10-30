@@ -41,7 +41,7 @@ export const Comments = (props) => {
                                     </div>
                                 </div>
                                 <div className="comment-item-right">
-                                    <span class="material-icons-outlined">more_vert</span>
+                                    <span className="material-icons-outlined">more_vert</span>
                                 </div>
                             </div>
                         })
